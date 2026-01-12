@@ -1,0 +1,9 @@
+body{
+    background-color: aqua;
+}
+td{
+    border: 2px solid rgb(0, 0, 0);
+}
+th{
+    border: 2px solid rgb(15, 15, 15);
+}
