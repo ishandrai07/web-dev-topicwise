@@ -26,10 +26,10 @@ It is reusable and defined using a dot (`.`) in CSS.
 
 ### Example:
 
-'''html:-
+```html
  <div class="red bg-yellow">First</div> 
-
-'''css:-
+```
+```css
 
 .red {
     background-color: aquamarine;
@@ -38,7 +38,7 @@ It is reusable and defined using a dot (`.`) in CSS.
 .bg-yellow {
     color: blueviolet;
 }
-
+```
 
 ## 🔹 ID
 
@@ -46,14 +46,14 @@ An id is used to uniquely identify one specific HTML element on a webpage.
 Each id must be unique and is defined using a hash (#) in CSS.
 
 ### Example:
-html:-
+```html
 <div id="seconddiv">Second</div>
-
-css:-
+```
+```css
 #seconddiv {
     background-color: blueviolet;
 }
-
+```
 🛠️ Technologies Used
 
 HTML5
