@@ -25,10 +25,12 @@ A **class** is used to apply the same CSS styles to **multiple HTML elements**.
 It is reusable and defined using a dot (`.`) in CSS.
 
 ### Example:
-html:-
-<div class="red bg-yellow">First</div>
 
-css:-
+'''html:-
+ <div class="red bg-yellow">First</div> 
+
+'''css:-
+
 .red {
     background-color: aquamarine;
 }
