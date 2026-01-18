@@ -13,7 +13,7 @@ This project demonstrates how to use **HTML media elements** such as video, audi
 
 ## 📘 Media Elements Used
 
-### 🎬 Video
+## 🎬 Video
 The `<video>` tag is used to display video content on a webpage with built-in controls.
 
 **Features used:**
@@ -26,7 +26,7 @@ The `<video>` tag is used to display video content on a webpage with built-in co
 ```html
 <video src="samplevideo.mp4" height="255" controls loop muted></video>
 ```
-###🔊 Audio
+## 🔊 Audio
 
 The `<audio>` tag is used to play audio files on a webpage.
 
@@ -35,7 +35,7 @@ The `<audio>` tag is used to play audio files on a webpage.
 <audio src="" controls></audio>
 ```
 
-###📺 Embedded Media (YouTube)
+## 📺 Embedded Media (YouTube)
 
 The `<iframe>` tag is used to embed external media such as YouTube videos.
 
@@ -49,21 +49,21 @@ The `<iframe>` tag is used to embed external media such as YouTube videos.
 </iframe>
 ```
 
-###🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 HTML5
 
-###🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
-Embed video and audio using HTML5
+- Embed video and audio using HTML5
 
-Use media attributes like controls, loop, and muted
+- Use media attributes like controls, loop, and muted
 
-Embed external content using iframe
+- Embed external content using iframe
 
-Understand basic media handling in web pages
+- Understand basic media handling in web pages
 
-🚀 Author
+## 🚀 Author
 
 Ishand Rai
 Frontend Web Development Learner
