@@ -41,7 +41,7 @@ The `&copy;` entity is used to display the copyright symbol.
 
 ### 🔹 Preformatted Text
 
-The `<pre>` and <code> tags are used to preserve whitespace and formatting while displaying code.
+The `<pre>` and `<code>` tags are used to preserve whitespace and formatting while displaying code.
 
 **Example:**
 ```html
@@ -49,22 +49,20 @@ The `<pre>` and <code> tags are used to preserve whitespace and formatting while
 &lt;p&gt;Hello World&lt;/p&gt;
 </code></pre>
 ```
+---
 
 ## 🛠️ Technologies Used
-
 - HTML5
+---
 
 ## 🎯 Learning Outcomes
 
 - Understand what HTML entities are
-
 - Display reserved HTML characters safely
-
 - Use non-breaking spaces for formatting
-
 - Show code blocks using `<pre>` and `<code>`
 
-
+---
 ### 🚀 Author
 
 Ishand Rai
