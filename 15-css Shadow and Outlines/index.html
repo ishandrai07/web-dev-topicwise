@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Outlines</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            margin: 10px;
+            padding: 10px;
+            border: 4px solid black;
+            box-shadow: 5px 5px 10px 4px grey;
+        }
+
+        .text{
+            text-shadow: 5px 5px 5px gray;
+            text-shadow: 0 0 10px rgb(56, 26, 110), 0 0 20px rgb(23, 153, 41), 0 0 30px #00f;   /*GLOW EFFECT*/
+            padding: 5px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 20px ;
+            outline: 2px solid red;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        this is box 1
+    </div>
+
+    <div class = "text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum numquam ad facere atque itaque consectetur
+        repudiandae illo corrupti? Obcaecati error provident temporibus maiores molestias officia repellat? Minima,
+        eaque adipisci hic nobis eum repellendus cumque quidem iusto, non nemo dolor ex molestiae id iste, nulla sit
+        minus harum eligendi amet perferendis!</p></div>
+</body>
+
+</html>
