@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root {
+            --color: blue;
+            --seccolor: yellow;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .b {
+            background-color: var(--color);
+        }
+
+        .c {
+            background-color: var(--seccolor);
+        }
+
+        ul li:first-child {
+            --color: orange;
+            background-color: var(--color);
+            /*becoz here color overwrite root color*/
+
+        }
+
+
+        ul {
+            display: flex;
+
+        }
+
+        li {
+            background-color: rgb(9, 255, 0);
+            list-style: none;
+            padding: 30px;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b">
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div>
+        <p class="c">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus accusantium cupiditate assumenda.
+            Eligendi
+            dolor corrupti aliquam assumenda aspernatur ab odit molestias eos fugiat deserunt facilis explicabo ex rem
+            tenetur, officiis quod suscipit repellendus alias doloribus dolorem molestiae ratione. Beatae pariatur
+            voluptate nam! Cupiditate quaerat harum assumenda distinctio amet eum omnis?</p>
+
+
+</body>
+
+</html>
