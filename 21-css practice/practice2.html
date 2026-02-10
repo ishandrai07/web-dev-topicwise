@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 480px){
+            body{
+                background-color: rgb(206, 6, 16);
+            }
+            .boxes{
+                flex-direction: column;
+            }
+            .sm1{
+                margin-left: 0;
+            }
+            .sm2{
+                margin-left: 0;
+            }
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .head{
+            position: sticky;
+            top:0px;
+            z-index: 1;
+        }
+        .box{
+            margin: 5px;
+            height: 110vh;
+            width: 90vw;
+            border: 2px solid black;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+
+        }
+        ul{
+            background-color: aqua;
+        }
+        .sm1{
+            height:40vh ;
+            width:40vw ;
+            border: 2px solid black;
+            display: inline-block;
+            position: relative;
+            top:10px ;
+            margin-left: 10px;
+        }
+
+        .sm2{
+            margin-left: 38px;
+            height:40vh ;
+            width:40vw ;
+            border: 2px solid black;
+            display: inline-block;
+            position: relative;
+            top:10px ;
+             
+        }
+        .round{
+            margin: 10px auto;
+            height: 50px;
+            width: 80vw ;
+            border: 2px solid black;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class = "box">
+        <nav class="head">
+            <ul>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+            </ul>
+        </nav>
+
+        <div class = "sm1 boxes"></div>
+
+        <div class = "sm2 boxes"></div>
+
+        <div class = "round">
+            WEB DEVELOPMENT sfksmkmskgmnkgmkfmgkdmgknfgknknkgnd
+        </div>
+
+        
+    </div>
+    <footer>
+        <div class = "foot">
+            <nav class = "fot">
+                <ul>
+                    <li>&copy;</li>
+                    <li>instagram</li>
+                    <li>phn no.9205818044</li>
+                </ul>
+            </nav>
+        </div>
+        </footer>
+</body>
+</html>
