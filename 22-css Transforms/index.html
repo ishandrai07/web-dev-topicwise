@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 10px;
+            height: 90vh;
+            width: 90vw;
+            border: 2px solid black;
+            display:flex
+            
+        }
+
+        
+        .smbox{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(230, 136, 136);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            
+        }
+
+        .smbox:hover{
+            transform: rotate(20deg);
+            
+        }
+
+        .sm2box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(230, 136, 136);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transform: rotateX(50deg);
+        }
+
+        .sm3box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(230, 136, 136);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transform: rotatey(70deg);
+        }
+
+        .sm4box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(230, 136, 136);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transform: rotatez(50deg);
+        }
+
+        .sm5box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(230, 136, 136);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+           /* transform: scale(1.5); */     /*(scale) - it increase the size 1.5 times*/
+           /* transform: scalex(1.5); */    /*(scale) - it increase the size 1.5 times w.r.t x-axis */
+           /* transform: scaley(1.5); */
+
+           transform:skew(7deg);
+           /* transform:skewx(7deg); */
+           /* transform:skewy(9deg); */
+           
+        }
+
+        .box6{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(230, 136, 136);
+           /* transform: translatex(20%);   */           /*it will move in x-axis 20% of its width*/
+            /* transform: translatey(20%); */        /*it will move in y-axis 20% of its height */
+
+            /*if i want to use more than 1 property at the same time*/
+            transform: translatex(50%)  skew(25deg)  translateY(50%);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class = "box">
+        <div class = "smbox class">
+            Box
+        </div>
+        <div class = "sm2box class">
+            Box2
+        </div>
+        <div class = "sm3box class">
+            Box3
+        </div>
+        <div class = "sm4box class">
+            Box4
+        </div>
+        <div class = "sm5box class">
+            Box5
+        </div>
+        
+        
+        <div class = "box6">
+        box6
+    </div>
+    </div>
+
+    
+</body>
+</html>
