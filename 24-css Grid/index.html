@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr ;
+            grid-template-rows: 1fr 2fr 2fr 1fr ;
+            height: 90vh;
+            width: 90vw;
+            background-color: rgb(221, 221, 243);
+            gap: 5px;
+            
+        }
+        .box{
+            background-color: rgb(11, 241, 50);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1{
+            grid-column: 1/5;
+        }
+
+        .item2{
+            grid-row: 2/4;
+        }
+
+        .item3{
+            grid-column: 2/4;
+
+        }
+        .item4{
+            grid-column: 2/3;
+        }
+
+        .item5{
+            grid-column: 3/4;
+        }
+
+        .item6{
+            grid-row: 4/5;
+            grid-column: 1/5;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "container">
+        <div class = "box item1">Header</div>
+        <div class = "box item2">Sidebar</div>
+        <div class = "box item3">Content 1</div>
+        <div class = "box item4">Content 2</div>
+        <div class = "box item5">Content 3</div>
+        <div class = "box item6">Footer</div>
+    </div>
+</body>
+</html>
