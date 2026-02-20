@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .cont{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 800px;
+        }
+
+        .box{
+            
+            height: 25vh;
+            width: 25vw;
+            font-size: 25px;
+            background-color: yellow;
+            transition-property: transform;
+            transition-duration: 1.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+
+        }
+        .box:hover{
+            transform:  rotatex(-80deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">first</div>
+    </div>
+</body>
+</html>
