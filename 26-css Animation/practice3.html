@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice exercise</title>
+
+    <style>
+        .cont{
+            width:80vw;
+            height:80vh;
+            background-color:rgb(186, 219, 35); 
+            position: relative;           
+        }
+
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+
+            
+            /*for x-axis and y-axis*/
+            animation: movey 1s ease-out infinite  alternate 2s, movex 4s linear infinite  alternate 2s;
+            
+        }
+
+        @keyframes movex{
+            from{
+                left:0;
+                
+            }
+            to{
+                left:100%;
+            }
+        }
+
+        @keyframes movey{
+            from{
+                bottom:0;
+                
+            }
+            to{
+                bottom:50%;
+            }
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="cont">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

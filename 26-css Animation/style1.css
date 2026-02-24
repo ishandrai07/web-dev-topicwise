@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.box {
+    height: 25vh;
+    width: 25vw;
+    background-color: yellow;
+
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+
+    /* shorthand property */
+    /* animation: move 2s infinite alternate ease-in-out 1s; */
+
+
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+        background-color: yellow;
+    }
+    to {
+        transform: translateX(75vw);
+        background-color: rgb(57, 5, 247);
+    }
+}
