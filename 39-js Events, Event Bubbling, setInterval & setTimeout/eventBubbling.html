@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cont {
+            margin: 20px;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .childcont {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(23, 196, 46);
+        }
+
+        .child {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(208, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="childcont">
+            <div class="child">I am a child element</div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".cont").addEventListener("click", (e) => {
+
+            alert("cont was clicked")
+        })
+
+        document.querySelector(".childcont").addEventListener("click", (e) => {
+            e.stopPropagation()  // stops an event from bubbling up
+            alert("childcont was clicked")
+        })
+
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()  //stops an event from bubbling up
+            alert("child was clicked")
+        })
+
+        
+        function randomColor() {
+            let first = Math.ceil(0 + Math.random() * 255);
+            let second = Math.ceil(0 + Math.random() * 255);
+            let third = Math.ceil(0 + Math.random() * 255);
+
+            return `rgb(${first} , ${second} , ${third})`
+        }
+        // setInterval :- Runs code AGAIN and AGAIN after a fixed interval
+        setInterval(() => {
+            document.querySelector(".child").style.backgroundColor = randomColor();
+        }, 1000);
+
+        
+
+        // setTimeout  :- Runs code ONCE after a given delay
+        /*
+        setTimeout(() => {
+            document.querySelector(".child").style.backgroundColor = randomColor();
+        }, 1000);
+        */
+    </script>
+</body>
+
+</html>
