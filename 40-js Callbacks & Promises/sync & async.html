@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sijfoskofs</h1>
+<script>
+    /*These are synchronous statements.
+    JS runs them immediately, one after another.*/
+    console.log("i am first")
+    console.log("i am second")
+    
+
+    // asynchronous function (This will print at last becoz it is async)
+    setTimeout(() => {
+        console.log("i am inside timeout")
+    }, 2000);
+
+    // Since JS didn’t wait for setTimeout, this runs right away.
+    console.log("i am third")
+</script>
+    
+</body>
+
+</html>
